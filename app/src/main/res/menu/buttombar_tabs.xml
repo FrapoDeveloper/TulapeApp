@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <item
+        android:id="@+id/tab_services"
+        android:icon="@drawable/ic_home"
+        android:title="Principal"
+
+        />
+    <item
+        android:id="@+id/tab_home"
+        android:icon="@drawable/ic_add"
+        android:title="Productos"
+
+        />
+    <item
+        android:id="@+id/tab_drivers"
+        android:title="Contacto"
+        android:icon="@drawable/ic_contact"
+        />
+
+</menu>

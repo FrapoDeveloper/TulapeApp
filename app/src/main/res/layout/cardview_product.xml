@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="20dp"
+    tools:context=".MenuActivity"
+    xmlns:cardView="http://schemas.android.com/apk/res-auto"
+    cardView:cardCornerRadius="3dp">
+    <!-- Frame layout para que los elementos se superposicionen -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- centerCrop: la imagen no se estira ni se pixelea -->
+        <ImageView
+            android:id="@+id/photo_driver_card"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/trigo"
+            android:background="@color/colorPrimaryDark"
+            android:scaleType="fitCenter"
+            />
+        <LinearLayout
+            android:background="@color/alpha_canal_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_gravity="bottom"
+            android:paddingLeft="8dp"
+            >
+            <TextView
+                android:id="@+id/username_driver_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Cerveza Tulape"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+
+                >
+                <TextView
+                    android:id="@+id/valoration_driver_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cerveza echa a base de linaza con un toque\nde azucar con un toque especial a amargo. "
+                    android:textStyle="bold"
+                    android:textSize="13dp"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="10dp"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/valoration_driver_card"
+                    android:gravity="center"
+                    >
+                    <Button
+                        android:id="@+id/ir_compra"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:background="@drawable/btn_round"
+                        android:textSize="15dp"
+
+                        android:textStyle="bold"
+                        android:text="S/5.5"
+                        />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</com.google.android.material.card.MaterialCardView>
+

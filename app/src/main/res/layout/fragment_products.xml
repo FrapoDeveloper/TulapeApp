@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_drivers"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context="com.example.proveedortulape.View.Fragments.Products">
+
+    <include
+        android:id="@+id/toolbar_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/drawer_toolbar">
+
+    </include>
+
+    <LinearLayout
+        android:layout_marginTop="?attr/actionBarSize"
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+
+        <ScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"
+
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="30dp">
+
+
+                <ImageView
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/imageView3"
+                    android:layout_gravity="center"
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    app:srcCompat="@drawable/contact" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="19dp"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal"
+                    android:text="Ayudanos a mejorar"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15dp"
+                    android:textStyle="italic"
+                    android:gravity="center_horizontal"
+                    android:text="Puedes contactarnos por cualquiera de nuestras redes sociales y ayudanos a mejorar, estamos para brindarte un excelente servicio de calidad.\n¡Tu opinión es importante!"
+                    />
+
+                <Button
+                    android:id="@+id/btn_wsp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_wsp"
+                    android:layout_marginTop="60dp"
+                    android:paddingLeft="20dp"
+                    android:drawableLeft="@drawable/ic_whatsapp"
+                    android:text="WhatsApp"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                     />
+
+                <Button
+                    android:id="@+id/btn_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_msg"
+                    android:layout_marginTop="20dp"
+                    android:paddingLeft="20dp"
+                    android:drawableLeft="@drawable/ic_messenger"
+                    android:text="Messenger"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    />
+
+
+                <Button
+                    android:id="@+id/btn_logout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/tbn_logout"
+                    android:layout_marginTop="20dp"
+                    android:paddingLeft="20dp"
+                    android:drawableLeft="@drawable/ic_logout"
+                    android:text="Cerrar Sesión"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="60dp"
+                    />
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+    </LinearLayout>
+
+
+
+</FrameLayout>
